@@ -88,6 +88,12 @@ TOOLSETS = {
         "tools": ["vision_analyze"],
         "includes": []
     },
+
+    "reviews": {
+        "description": "Product review analysis - automatically fetches and analyzes low-rated reviews from a URL",
+        "tools": ["analyze_product_reviews"],
+        "includes": []
+    },
     
     "image_gen": {
         "description": "Creative generation tools (images)",
@@ -509,3 +515,4 @@ if __name__ == "__main__":
     print(f"  Created 'my_custom' toolset:")
     print(f"    Description: {custom_info['description']}")
     print(f"    Resolved tools: {', '.join(custom_info['resolved_tools'])}")
+
